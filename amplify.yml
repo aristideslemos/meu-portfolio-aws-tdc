@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "Iniciando build do portfolio..."
+    build:
+      commands:
+        - echo "Nenhum passo de build necessário (HTML/CSS/JS puro)"
+  artifacts:
+    # Pasta publicada pelo Amplify
+    baseDirectory: frontend
+    files:
+      - '**/*'
+  cache:
+    paths: []
